@@ -276,6 +276,7 @@
     </section>
     <section class="additional">
       <h2 class="additional__title">Дополнительные товары</h2>
+      <div class="additional__wrapper"></div>
       <ul class="additional__list">
         <li class="additional__item card-short">
           <div class="card-short__content">
@@ -331,8 +332,21 @@
           и получите чехол для
           кота в подарок!</p>
       </aside>
+      </div>
     </section>
-
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Акции и новинки</h2>
+        <form class="promo__form subscribe" method="post" action="https://echo.htmlacademy.ru">
+          <label class="subscribe__text" for="user-email">Подпишитесь на наши новости и не пропустите ни одного предложения!
+          </label>
+          <div class="subscribe__wrapper">
+            <input class="subscribe__email" type="email" id="user-email" name="email" placeholder="кuklachev@gmail.com" required>
+            <button class="subscribe__button basic-button" type="submit" name="subscribe__button">Подписаться</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <address class="main-footer__address address">
