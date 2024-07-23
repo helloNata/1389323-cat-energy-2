@@ -129,17 +129,23 @@
           <span class="parametr__name">Затраты на питание:</span>
           <span class="parametr__value">15 000 РУБ.</span>
         </p>
-        <div class="exemple__slider slider-contrast">
-          <div class="slider-contrast__control">
-            <button class="slider-contrast__button" type="button">
-              <span class="visually-hidden">Сравнить до и после</span>
-              <svg class="slider-contrast__button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="currentColor" viewBox="0 0 24 18">
-                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
-              </svg>
-            </button>
+        <div class="exemple__slider slider">
+          <div class="exemple__after-container slider__after-container">
+            <img class="exemple__image-after" src="#" width="280" height="256" alt="Стройный кот.">
           </div>
-          <img class="exemple__before" src="#" width="280" height="256" alt="Жирный кот.">
-          <img class="exemple__after" src="#" width="280" height="256" alt="Стройный кот.">
+          <div class="slider__before-wrapper" style="width: 50%;">
+            <div class="exemple__before-container slider__before-container">
+              <img class="exemple__image-before" src="#" width="280" height="256" alt="Жирный кот.">
+            </div>
+            <div class="exemple__control slider__control">
+              <button class="slider__button" type="button">
+                <span class="visually-hidden">Сравнить до и после</span>
+                <svg class="slider__button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="currentColor" viewBox="0 0 24 18">
+                  <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -193,7 +199,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <svg class="copyright__logo-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
             <path fill="#666" d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />
