@@ -11,31 +11,32 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#" aria-label="Логотип компании">
-      <img class="logo__image logo__image--mobile" width="33" height="38" alt="Кот в костюме супер-героя" src="./images/logo-mobile.svg">
-      <img class="logo__text" width="101" height="18" alt="Cat energy" src="./images/logo-text.svg">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--open" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
-        <span class="visually-hidden">Скрыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="programm.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="#" aria-label="Перейти на главную страницу">
+        <img class="main-header__logo-image main-header__logo-image--mobile" width="190" height="38" alt="Кот в костюме супер-героя и название компании 'Cat energy'" src="./images/logo-mobile.svg">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <span class="visually-hidden">Скрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="programm.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <section class="hero">
@@ -47,22 +48,22 @@
         <a class="hero__button basic-button" href="programm.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="slim">
-      <div class="slim__wrapper">
-        <h2 class="slim__title title-programm title-programm--1">Похудение</h2>
-        <p class="slim__text text-programm">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="slim__link link-programm" href="#">
-          Каталог slim
-        </a>
-      </div>
-    </section>
-    <section class="pro">
-      <div class="pro__wrapper">
-        <h2 class="pro__title title-programm title-programm--2">Набор массы</h2>
-        <p class="pro__text text-programm">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="pro__link link-programm" href="#">
-          Каталог pro
-        </a>
+    <section class="program">
+      <div class="program__wrapper">
+        <article class="program__slim program-card">
+          <h2 class="program-card__title program-card__title--slim">Похудение</h2>
+          <p class="program-card__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program-card__link" href="#">
+            Каталог slim
+          </a>
+        </article>
+        <article class="program__pro program-card">
+          <h2 class="program-card__title program-card__title--pro">Набор массы</h2>
+          <p class="program-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program-card__link" href="#">
+            Каталог pro
+          </a>
+        </article>
       </div>
     </section>
     <section class="methodology">
@@ -109,9 +110,6 @@
             <div class="exemple__control slider__control">
               <button class="slider__button" type="button">
                 <span class="visually-hidden">Сравнить до и после</span>
-                <svg class="slider__button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="18" fill="currentColor" viewBox="0 0 24 18">
-                  <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
-                </svg>
               </button>
             </div>
           </div>
@@ -120,7 +118,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__address address">
+    <div class="main-footer__wrapper address">
       <p class="address__appeal">Приглашаем к сотрудничеству дилеров!
       </p>
       <address class="address__text">Ул. Большая
@@ -130,8 +128,8 @@
     </div>
     <img class="main-footer__map map" width="320" height="362" alt="" src="./images/location.jpg">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo logo logo--short" href="#" aria-label="Главная страница сайта.">
-        <img class="logo__text" src="./images/footer-logo.svg" width="128" height="24" alt="Cat energy">
+      <a class="main-footer__logo" href="#" aria-label="Главная страница сайта.">
+        <img class="main-footer__logo-text" src="./images/footer-logo.svg" width="128" height="24" alt="Cat energy">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
