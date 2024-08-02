@@ -1,0 +1,28 @@
+.card-product__name {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+
+  &--empty {
+    color: #111111;
+    text-align: center;
+  }
+}
+
+.card-product__characteristics {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card-product__text {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+

@@ -1,20 +1,22 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
-@import "./common/visually-hidden.scss";
+
 
 /* BLOCKS */
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/hero.scss";
 @import "./blocks/basic-button.scss";
+@import "./blocks/hero.scss";
 @import "./blocks/program.scss";
 @import "./blocks/program-card.scss";
-@import "./blocks/methodology.scss";
 @import "./blocks/index-subtitle.scss";
+@import "./blocks/methodology.scss";
 @import "./blocks/example.scss";
 @import "./blocks/parametr.scss";
 @import "./blocks/slider.scss";
@@ -25,7 +27,7 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/card-product.scss";
-@import "./blocks/additional.scss";
 @import "./blocks/catalog-subtitle.scss";
+@import "./blocks/additional.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/subscribe.scss";

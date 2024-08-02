@@ -1,0 +1,26 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../../images/hero-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 320px 302px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/hero-background@2x.jpg");
+  }
+}
+
+.hero__title {
+  font-family: $oswald-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__text {
+  font-family: $oswald-font;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

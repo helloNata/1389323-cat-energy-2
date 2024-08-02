@@ -1,0 +1,49 @@
+.basic-button {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $basic-green;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--secondary {
+    color: $primary-color;
+    background-color: $basic-grey;
+
+    &:hover {
+      color: $primary-color;
+      background-color:#ebebeb;
+    }
+
+    &:focus {
+      color: $primary-color;
+      background-color:#ebebeb;
+    }
+
+    &:active {
+      color: $primary-color;
+      background-color:#ebebeb;
+    }
+  }
+
+  &--accent {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+
