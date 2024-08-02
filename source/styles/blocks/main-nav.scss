@@ -21,4 +21,21 @@
 
 .main-nav__link {
   color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--current {
+
+  }
+
 }
