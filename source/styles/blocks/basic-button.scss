@@ -1,23 +1,20 @@
 .basic-button {
-  font-family: $oswald-font;
-  font-size: 16px;
-  line-height: 20px;
+  @include font-full($oswald-font, 16px, 20px, 400, $contrast-text-color);
   text-transform: uppercase;
-  color: #ffffff;
   background-color: $basic-green;
   text-align: center;
   border: none;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $basic-green-hover;
   }
 
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $basic-green-hover;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($contrast-text-color, 0.3);
   }
 
   &--secondary {
@@ -26,17 +23,17 @@
 
     &:hover {
       color: $primary-color;
-      background-color:#ebebeb;
+      background-color: $basic-grey-hover;
     }
 
     &:focus {
       color: $primary-color;
-      background-color:#ebebeb;
+      background-color: $basic-grey-hover;
     }
 
     &:active {
       color: $primary-color;
-      background-color:#ebebeb;
+      background-color: $basic-grey-hover;
     }
   }
 
@@ -45,5 +42,3 @@
     line-height: 26px;
   }
 }
-
-

@@ -1,8 +1,5 @@
 .address__appeal {
-  font-family: $oswald-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
+  @include font-full($oswald-font, 16px, 20px, 400, $special-dark);
   text-transform: uppercase;
 }
 

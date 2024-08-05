@@ -1,8 +1,4 @@
 .index-subtitle {
-  font-family: $oswald-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
+  @include font-full($oswald-font, 36px, 40px, 400, $secondary-color);
   text-align: center;
-  color: $secondary-color;
 }

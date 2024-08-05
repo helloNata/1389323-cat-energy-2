@@ -3,28 +3,19 @@
 }
 
 .program-card__title {
-font-family: $oswald-font;
-font-size: 24px;
-line-height: 37px;
-font-weight: 400;
-color: $secondary-color;
-text-transform: uppercase;
+  @include font-full($oswald-font, 24px, 37px, 400, $secondary-color);
+  text-transform: uppercase;
 }
 
 .program-card__link {
-  font-family: $oswald-font;
-  color: $secondary-color;
-  font-size: 16px;
-  line-height: 16px;
+  @include font-full($oswald-font, 16px, 16px, 400, $secondary-color);
   text-align: center;
   text-transform: uppercase;
 
   &:hover {
-
   }
 
   &:focus {
-
   }
 
   &:active {

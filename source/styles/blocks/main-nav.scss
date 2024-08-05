@@ -1,10 +1,6 @@
 .main-nav {
-  font-family: $oswald-font;
+  @include font-full($oswald-font, 20px, 20px, 400, $secondary-color);
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: $secondary-color;
   text-transform: uppercase;
 }
 
@@ -34,8 +30,5 @@
     opacity: 0.3;
   }
 
-  &--current {
-
-  }
-
+  &--current {}
 }

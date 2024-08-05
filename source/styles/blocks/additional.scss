@@ -5,13 +5,9 @@
 }
 
 .additional__title {
-  font-family: $oswald-font;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
+  @include font-full($oswald-font, 16px, 16px, 400, $special-dark-grey);
   text-align: center;
   text-transform: uppercase;
-  color: #222222;
 }
 
 .additional__characteristic {
@@ -23,7 +19,7 @@
 }
 
 .additional__offer {
-  color:#ffffff;
+  color: $contrast-text-color;
   background-color: $basic-green;
   background-image: url("../../images/additional-background@1x.jpg");
   background-repeat: no-repeat;
@@ -40,5 +36,3 @@
   line-height: 20px;
   text-align: center;
 }
-
-
