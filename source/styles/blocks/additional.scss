@@ -20,6 +20,7 @@
 
 .additional__offer {
   color: $contrast-text-color;
+  min-height: 290px;
 
   @media (max-width: $mobile-width) {
     background-image:
