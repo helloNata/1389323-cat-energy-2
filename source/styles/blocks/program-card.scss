@@ -1,21 +1,51 @@
+$line-height-title: 37px;
+$height-title-image: 50px;
+
 .program-card {
   background-color: $basic-grey;
 }
 
 .program-card__title {
-  @include font-full($oswald-font, 24px, 37px, 400, $secondary-color);
+  @include font-full($oswald-font, 24px, $line-height-title, 400, $secondary-color);
+  position: relative;
+  padding-left: 78px;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--slim::before {
+    @include before-after(50px, $height-title-image);
+    inset: calc(-1 * ($height-title-image/2 - $line-height-title/2)) 0 0 7px;
+    background-image: url("../../icons/stack.svg#program-slim");
+  }
+
+  &--pro::before {
+    @include before-after(67px, $height-title-image);
+    inset: calc(-1 * ($height-title-image/2 - $line-height-title/2)) 0 0 0;
+    background-image: url("../../icons/stack.svg#program-pro");
+  }
 }
 
 .program-card__link {
   @include font-full($oswald-font, 16px, 16px, 400, $secondary-color);
+  position: relative;
   text-align: center;
   text-transform: uppercase;
 
-  &:hover {
-  }
 
-  &:focus {
+  &::after {
+    @include before-after(32px, 12px);
+    position: absolute;
+    top: 25%;
+    right: -47px;
+    background-image: url("../../icons/stack.svg#arrow");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-position: left;
   }
 
   &:active {
