@@ -3,7 +3,7 @@
   line-height: 20px;
   color: $primary-color;
 
-  &::before {
+  &::after {
     @include before-after(27px, 34px);
     background-color: $special-grey;
     mask-image: url("../../icons/stack.svg#html-academy");
@@ -14,7 +14,7 @@
 
   &:hover,
   &:focus {
-    &::before {
+    &::after {
       background-color: $basic-green;
     }
   }
