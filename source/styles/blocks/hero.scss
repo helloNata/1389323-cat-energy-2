@@ -1,17 +1,15 @@
 .hero {
-  @media (max-width: $mobile-width) {
+  background-image:
+    linear-gradient(to bottom, rgba($basic-green, 0.85) 70%, $primary-bg-color 70%),
+    url("../../images/background/hero-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto, 320px auto;
+
+  @media (min-resolution: 2dppx) {
     background-image:
       linear-gradient(to bottom, rgba($basic-green, 0.85) 70%, $primary-bg-color 70%),
-      url("../../images/background/hero-background@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto, 320px auto;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(to bottom, rgba($basic-green, 0.85) 70%, $primary-bg-color 70%),
-        url("../../images/background/hero-background@2x.jpg");
-    }
+      url("../../images/background/hero-background@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {

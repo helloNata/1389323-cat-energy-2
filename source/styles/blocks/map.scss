@@ -1,15 +1,12 @@
 .map {
+  background-image: url("../../images/background/map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 362px;
 
-  @media (max-width: $mobile-width) {
-    background-image: url("../../images/background/map-mobile@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/background/map-mobile@2x.png");
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background/map-mobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
@@ -22,7 +19,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
     background-image: url("../../images/background/map-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {

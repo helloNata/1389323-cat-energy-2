@@ -20,29 +20,27 @@
 
 .additional__offer {
   color: $contrast-text-color;
+  padding-top: 150px;
+  min-height: 290px;
+  background-image:
+    url("../../icons/stack.svg#additional-icon"),
+    linear-gradient(rgba($basic-green, 0.85) 100%, $primary-bg-color 100%),
+    url("../../images/background/additional-background@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px, cover, 100% auto;
+  background-position: top 65px center, top center, center;
 
-  @media (max-width: $mobile-width) {
-    padding-top: 150px;
-    min-height: 290px;
+  @media (min-resolution: 2dppx) {
     background-image:
       url("../../icons/stack.svg#additional-icon"),
       linear-gradient(rgba($basic-green, 0.85) 100%, $primary-bg-color 100%),
-      url("../../images/background/additional-background@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 78px 80px, cover, 100% auto;
-    background-position: top 65px center, top center, center;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        url("../../icons/stack.svg#additional-icon"),
-        linear-gradient(rgba($basic-green, 0.85) 100%, $primary-bg-color 100%),
-        url("../../images/background/additional-background@2x.jpg");
-    }
+      url("../../images/background/additional-background@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
     padding-left: 170px;
+    padding-top: 0;
     background-image:
       url("../../icons/stack.svg#additional-icon"),
       linear-gradient(rgba($basic-green, 0.85) 100%, $primary-bg-color 100%),
