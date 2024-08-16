@@ -1,6 +1,34 @@
 .page__body {
+  @include full-flex(flex-start, stretch, column nowrap);
   @include font-full();
   font-style: normal;
   background-color: $primary-bg-color;
+  width: 320px;
+  min-height: 100vh;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    position: relative;
+  }
+}
+
+.page__container {
+  width: 279px;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 704px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+
+  outline: 1px solid blue;
 }
 

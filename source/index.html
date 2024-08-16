@@ -26,7 +26,7 @@
       <button class="main-nav__toggle main-nav__toggle--open" type="button">
         <span class="visually-hidden">Открыть/свернуть меню</span>
       </button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--open">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
@@ -42,10 +42,9 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__container">
-        <h1 class="hero__title">Функциональное
-          питание для котов</h1>
+        <h1 class="hero__title">Функциональное <br> питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <picture>
+        <picture class="hero__image">
           <source media="(min-width: 1440px)" srcset="images/content-index/index-product-desktop@1x.png 1x, images/content-index/index-product-desktop@2x.png 2x" type="image/png" width="552" height="499">
           <source media="(min-width: 768px)" srcset="images/content-index/index-product-tablet@1x.png 1x, images/content-index/index-product-tablet@2x.png 2x" type="image/png" width="709" height="609">
           <img class="hero__image" src="images/content-index/index-product@1x.png" srcset="images/content-index/index-product@2x.png 2x" width="280" height="270" alt="Корм для котов в фирменной упаковке.">

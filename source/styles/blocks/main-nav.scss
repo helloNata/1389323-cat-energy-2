@@ -1,21 +1,95 @@
 .main-nav {
+  @include full-flex(center, flex-end, column nowrap);
   @include font-full($oswald-font, 20px, 20px, 400, $secondary-color);
+  position: relative;
+  width: 58px;
   font-style: normal;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-block: auto;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    flex-flow: row wrap;
+    width: 436px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 483px;
+    font-size: 20px;
+    line-height: 29.64px;
+    color: $contrast-text-color;
+  }
 }
 
 .main-nav__toggle {
+  min-width: 24px;
+  min-height: 24px;
+  margin-left: auto;
   background-color: $primary-bg-color;
-  border: none;
+  border-color: red;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
+  display: none;
+  position: absolute;
+  top: 44px;
+  right: -20px;
+  width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $primary-bg-color;
+
+  &--open {
+    //display: block;
+    display: none; //test
+  }
+
+  @media (min-width: $tablet-width) {
+    @include full-flex(flex-end);
+    position: static;
+    top: 0;
+    right: 0;
+    width: 436px;
+    column-gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    background-color: transparent;
+    color: $contrast-text-color;
+  }
 }
 
+.main-nav__item {
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    text-align: right;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+
 .main-nav__link {
+  display: block;
+  padding-block: 21px 24px;
   color: inherit;
 
   &:hover {
@@ -30,5 +104,23 @@
     opacity: 0.3;
   }
 
-  &--current {}
+  @media (min-width: $tablet-width) {
+    padding-block: 10px 12px;
+
+    &--current {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      text-decoration-color: $basic-green;
+      text-decoration-thickness: 2px;
+      text-underline-position: under;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 13px;
+
+    &--current {
+      text-decoration-color: $contrast-text-color;
+    }
+  }
 }
