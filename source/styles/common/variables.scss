@@ -22,7 +22,10 @@ $desktop-width: 1440px;
 $mobile-width:767px;
 
 /* program-card */
-$line-height-title: 37px;
+/* line-height for title */
+$line-height-mobile: 37px;
+$line-height-desktop: 36px;
+/* width for icon */
 $slim-width: 50px !default;
 $pro-width: 67px !default;
 $margin-left-title: 20px !default;

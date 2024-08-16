@@ -1,5 +1,14 @@
 .example {
   background-color: #eaeaea;
+  padding-block: 25px 40px;
+}
+
+.example__title {
+  margin-block: 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__list {
