@@ -1,6 +1,28 @@
+.subscribe {
+  @include full-flex();
+  row-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
 .subscribe__text {
   @include font-full($oswald-font, 16px, 24px, 400, $secondary-color);
   text-align: center;
+  margin-block: 0 8px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .subscribe__email {
@@ -8,8 +30,28 @@
   text-transform: uppercase;
   background-color: $primary-bg-color;
   border: 1px solid #cdcdcd;
+  padding: 13px;
+  width: 280px;
 
   &:hover {
 
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscribe__button {
+  padding-block: 15px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding-block: 14px;
   }
 }

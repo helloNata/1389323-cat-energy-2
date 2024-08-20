@@ -1,5 +1,10 @@
 .address {
   position: relative;
+  background-color: $basic-grey;
+
+  &--home {
+    background-color: $primary-bg-color;
+  }
 }
 
 .address__container {
