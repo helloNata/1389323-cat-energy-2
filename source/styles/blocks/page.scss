@@ -18,17 +18,15 @@
 }
 
 .page__container {
-  width: 279px;
+  width: 280px;
   margin-inline: auto;
 
   @media (min-width: $tablet-width) {
-    width: 704px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
-
-  outline: 1px solid blue;
 }
 

@@ -20,7 +20,14 @@
     width: 483px;
     font-size: 20px;
     line-height: 29.64px;
-    color: $contrast-text-color;
+    color: $special-dark;
+  }
+
+  &--home {
+    @media (min-width: $desktop-width) {
+      color: $contrast-text-color;
+      background-color: transparent;
+    }
   }
 }
 
@@ -39,17 +46,17 @@
 .main-nav__list {
   display: none;
   position: absolute;
-  top: 44px;
-  right: -20px;
+  top: 42px;
+  right: -21px;
   width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: $primary-bg-color;
+  z-index: 3;
 
   &--open {
-    //display: block;
-    display: none; //test
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -64,7 +71,6 @@
   @media (min-width: $desktop-width) {
     width: 480px;
     background-color: transparent;
-    color: $contrast-text-color;
   }
 }
 
@@ -119,7 +125,7 @@
   @media (min-width: $desktop-width) {
     padding-block: 13px;
 
-    &--current {
+    &--current-home {
       text-decoration-color: $contrast-text-color;
     }
   }

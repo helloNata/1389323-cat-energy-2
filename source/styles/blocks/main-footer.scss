@@ -1,8 +1,22 @@
 .main-footer {
+  @include full-flex(center, center, column nowrap);
+  gap: 20px;
   background-color: $basic-grey;
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .main-footer__logo {
+  width: 130px;
   color: $special-dark;
 
   &:hover,
@@ -12,5 +26,32 @@
 
   &:active {
     color: #6b6b6b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+  }
+}
+
+.main-footer__social {
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 184px;
+    margin-inline: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 236px;
+  }
+}
+
+.main-footer__copyright {
+  align-self: flex-start;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
   }
 }
