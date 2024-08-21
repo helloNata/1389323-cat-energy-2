@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   padding-block: 27px 20px;
   text-align: center;
   background-image:
@@ -10,7 +9,7 @@
   background-size: 100% auto, 320px auto;
 
   @media (min-width: $tablet-width) {
-    padding-block: 61px 0;
+    padding-block: 0;
     background-image: none;
     text-align: left;
   }
@@ -30,6 +29,7 @@
 .hero__container {
   width: 320px;
   margin-inline: auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -120,7 +120,7 @@
     position: absolute;
     width: 244px;
     bottom: 526px;
-    left: 123px;
+    left: 93px;
   }
 
   @media (min-width: $desktop-width) {

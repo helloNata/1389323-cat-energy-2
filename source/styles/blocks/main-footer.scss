@@ -1,17 +1,30 @@
 .main-footer {
-  @include full-flex(center, center, column nowrap);
-  gap: 20px;
+  padding-block: 40px;
   background-color: $basic-grey;
-  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 30px;
+    padding-block: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 66px;
+  }
+}
+
+.main-footer__container {
+  @include full-flex(center, center, column nowrap);
+  gap: 20px;
+  width: 280px;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    width: 1220px;
   }
 }
 

@@ -1,7 +1,6 @@
 .main-nav {
   @include full-flex(center, flex-end, column nowrap);
   @include font-full($oswald-font, 20px, 20px, 400, $secondary-color);
-  position: relative;
   width: 58px;
   font-style: normal;
   text-transform: uppercase;
@@ -46,9 +45,10 @@
 .main-nav__list {
   display: none;
   position: absolute;
-  top: 42px;
-  right: -21px;
-  width: 320px;
+  top: 66px;
+  left: 0;
+  width: 100vw;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;

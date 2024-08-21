@@ -4,11 +4,12 @@
   grid-template-rows: repeat(3, auto);
   justify-content: start;
   align-items: start;
-  padding-block: 20px 25px;
+  padding: 20px calc((100vw - 280px)/2) 25px;
 
   &--secondary {
     display: block;
     padding-top: 78px;
+    padding-inline: calc((100vw - 280px)/2);
   }
 
   @media (min-width: $tablet-width) {
