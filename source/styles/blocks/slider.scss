@@ -56,7 +56,19 @@
     z-index: 1;
   }
 
-  &:hover,
+  &:hover {
+    background-color: $basic-green;
+    cursor: pointer;
+
+    &::after {
+      background-color: $basic-green;
+    }
+
+    &::before {
+      border-color: $basic-green;
+    }
+  }
+
   &:focus {
     background-color: $basic-green;
 

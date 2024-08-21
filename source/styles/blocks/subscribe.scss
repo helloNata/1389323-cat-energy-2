@@ -29,12 +29,24 @@
   @include font-full($oswald-font, 20px, 29.6px, 400);
   text-transform: uppercase;
   background-color: $primary-bg-color;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   padding: 13px;
   width: 280px;
+  color: $primary-color;
+  /*
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+*/
 
   &:hover {
+    border-color: #cdcdcd;
+  }
 
+  &:focus {
+    border-color: $primary-color;
+    border-width: 2px;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

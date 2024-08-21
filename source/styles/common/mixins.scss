@@ -30,16 +30,3 @@
   flex-flow: $flex-flow;
   display: $display;
 }
-
-@function padding-auto($width, $min-padding) {
-  @if calc(100vw - $width) == 0 {
-    @return $min-padding;
-  }
-
-  @else {
-    $padding-custom:calc((100vw - $width))/2;
-
-    @return $padding-custom;
-  }
-}
-

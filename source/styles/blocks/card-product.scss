@@ -1,4 +1,5 @@
 .card-product {
+  //@include padding-auto(320px, 20px, 20px, 25px);
   display: grid;
   grid-template-columns: 140px 76px 64px;
   grid-template-rows: repeat(3, auto);
@@ -6,10 +7,13 @@
   align-items: start;
   padding: 20px calc((100vw - 280px)/2) 25px;
 
+  @media (max-width: 320px) {
+    padding: 20px 20px 25px;
+  }
+
   &--secondary {
     display: block;
     padding-top: 78px;
-    padding-inline: calc((100vw - 280px)/2);
   }
 
   @media (min-width: $tablet-width) {
