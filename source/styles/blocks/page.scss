@@ -7,7 +7,7 @@
   min-height: 100vh;
   margin-inline: auto;
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     position: relative;
   }
 }
@@ -16,11 +16,11 @@
   width: 280px;
   margin-inline: auto;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 708px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 1220px;
   }
 }

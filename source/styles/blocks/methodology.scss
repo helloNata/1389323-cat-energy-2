@@ -1,11 +1,11 @@
 .methodology {
   padding-bottom: 49px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding-bottom: 47px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding-bottom: 69px;
   }
 }
@@ -13,7 +13,7 @@
 .methodology__title {
   margin-block: 0 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
 }
@@ -23,12 +23,12 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     @include full-flex();
     gap: 37px 133px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     column-gap: 77px;
   }
 }
@@ -68,7 +68,7 @@
     background-size: 26px 32px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     flex-flow: column nowrap;
     gap: 31px;
     width: 250px;
@@ -79,7 +79,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     &--benefit {
       margin-right: 17px;
       width: 230px;
@@ -104,7 +104,7 @@
   width: 199px;
   margin-block: 0;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 245px;
     font-size: 16px;
     line-height: 24px;

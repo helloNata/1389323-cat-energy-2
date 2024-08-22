@@ -8,7 +8,7 @@
     @include before-after(280px, 1px);
     background-color: $decorate-social-color;
 
-    @media (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
       display: none;
     }
   }

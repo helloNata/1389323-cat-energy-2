@@ -7,7 +7,7 @@
   flex-grow: 1;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: $width-slider-mobile;
   }
 }
@@ -17,7 +17,7 @@
   flex-grow: 1;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: $width-slider-mobile;
   }
 }
@@ -93,7 +93,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     height: calc($height-slider-mobile * 2);
   }
 }

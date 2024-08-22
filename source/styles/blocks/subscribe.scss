@@ -2,7 +2,7 @@
   @include full-flex();
   row-gap: 16px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     justify-content: center;
   }
 }
@@ -13,14 +13,14 @@
   margin-block: 0 8px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
     width: 632px;
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and  (min-width: $desktop-width) {
     width: 100%;
   }
 }
@@ -49,11 +49,11 @@
     outline: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     width: 376px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and  (min-width: $desktop-width) {
     width: 496px;
   }
 }
@@ -62,7 +62,7 @@
   padding-block: 15px;
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     width: 256px;
     padding-block: 14px;
   }

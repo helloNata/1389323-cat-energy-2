@@ -2,11 +2,11 @@
   padding: 30px 33px 18px 20px;
   background-color: $basic-grey;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 75px 316px 58px 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 457px;
     grid-template-rows: minmax(86px, auto) 1fr minmax(38px, auto);
@@ -25,14 +25,14 @@
   word-wrap: break-word;
 
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding-left: 162px;
   }
 
@@ -47,13 +47,13 @@
     inset: calc(-1 * (50px / 2 - $line-height-mobile/2)) 0 0 0;
     background-image: url("../../icons/stack.svg#program-slim");
 
-    @media (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
       width: 200px;
       height: 210px;
       inset: 4px 0 0 392px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media screen and (min-width: $desktop-width) {
       width: 100px;
       height: 102px;
       $line-height-title: 36px;
@@ -66,13 +66,13 @@
     inset: calc(-1 * (50px / 2 - $line-height-mobile/2)) 0 0 -7px;
     background-image: url("../../icons/stack.svg#program-pro");
 
-    @media (min-width: $tablet-width) {
+    @media screen and (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
       inset: 14px 0 0 358px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media screen and (min-width: $desktop-width) {
       width: 134px;
       height: 100px;
       $line-height-title: 36px;
@@ -84,14 +84,14 @@
 .program-card__text {
   margin-block: 0 23px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     color: $secondary-color;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 53px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -123,7 +123,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29.64px;
 
@@ -132,8 +132,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    //margin-top: auto;
+  @media screen and (min-width: $desktop-width) {
     place-self: center start;
   }
 }

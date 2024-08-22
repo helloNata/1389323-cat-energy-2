@@ -2,13 +2,13 @@
   background-color: $example-color;
   padding-block: 25px 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding-block: 45px 101px;
     border-top: 1px solid #e6e6e6;
     background: linear-gradient(to bottom, $primary-bg-color 57.3%, $example-color 57.3%);
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding-block: 0 75px;
     background: linear-gradient(to bottom, $primary-bg-color 21.9%, $basic-grey 21.9%);
   }
@@ -28,12 +28,12 @@
 .example__title {
   margin-block: 0 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 60px;
     text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 77px;
     grid: 1/1/2/2;
   }
@@ -42,13 +42,13 @@
 .example__text {
   margin-block: 0 20px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 433px;
     margin-bottom: 0;
   }
@@ -62,12 +62,12 @@
   margin: 0 0 20px;
   list-style: none;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     gap: 20px 43px;
     margin-bottom: 104px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 436px;
     gap: 60px 42px;
   }
@@ -84,7 +84,7 @@
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 162px;
 
     &--secondary {
@@ -96,7 +96,7 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     &--secondary {
       text-align: left;
       width: 100%;
@@ -105,12 +105,12 @@
 }
 
 .example__item--secondary .example__name {
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     display: block;
     margin-bottom: 9px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     display: inline;
     margin: 0 63px 0 0;
   }
@@ -120,13 +120,13 @@
   width: 100%;
   height: $height-slider-mobile;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
     margin-inline: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-inline: 0;
     grid-row: 1/-1;
     grid-column: 2/3;
@@ -149,7 +149,7 @@
     object-position: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: calc($width-slider-mobile * 2);
     height: calc($height-slider-mobile * 2);
   }

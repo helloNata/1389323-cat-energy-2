@@ -8,13 +8,13 @@
   background-position: top center;
   background-size: 100% auto, 320px auto;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding-block: 0;
     background-image: none;
     text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding-block: 142px 0;
     margin-bottom: 82px;
     min-height: 693px;
@@ -31,12 +31,12 @@
   margin-inline: auto;
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 708px;
     margin-inline: auto;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 1220px;
     margin-inline: auto;
     display: grid;
@@ -51,7 +51,7 @@
   @include font-full($oswald-font, 36px, 36px, 400, $contrast-text-color);
   margin-block: 0 23px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 40px;
     margin-left: 93px;
     font-size: 60px;
@@ -59,7 +59,7 @@
     color: $secondary-color;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin: 81px 0 0 80px;
     margin-left: 80px;
     align-self: start;
@@ -74,7 +74,7 @@
   color: $contrast-text-color;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $secondary-color;
@@ -82,7 +82,7 @@
     margin-bottom: 21px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-left: 80px;
     margin-bottom: 12px;
     align-self: start;
@@ -97,13 +97,13 @@
   width: 280px;
   height: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 709px;
     height: 100%;
     margin-left: 3px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin: 0 0 0 -32px;
     width: 552px;
     height: 499px;
@@ -116,14 +116,14 @@
   width: 280px;
   margin-inline: auto;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     position: absolute;
     width: 244px;
     bottom: 526px;
     left: 93px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     position: static;
     width: 244px;
     margin-left: 80px;

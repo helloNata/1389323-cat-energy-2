@@ -1,11 +1,11 @@
 .promo {
   padding-block: 0 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and  (min-width: $desktop-width) {
     padding-bottom: 104px;
   }
 }
@@ -13,12 +13,12 @@
 .promo__title {
   margin-block: 0 32px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and  (min-width: $tablet-width) {
     margin-bottom: 66px;
     margin-left: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and  (min-width: $desktop-width) {
     margin-bottom: 72px;
     margin-left: 0;
   }
