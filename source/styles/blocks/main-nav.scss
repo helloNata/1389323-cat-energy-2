@@ -1,7 +1,8 @@
 .main-nav {
   @include full-flex(center, flex-end, column nowrap);
-  @include font-full($oswald-font, 20px, 20px, 400, $secondary-color);
+  @include font-full($oswald-font, 20px, 1, 400, $secondary-color);
   width: 58px;
+  min-height: 24px;
   font-style: normal;
   text-transform: uppercase;
   margin-left: auto;
@@ -35,6 +36,7 @@
   min-height: 24px;
   margin-left: auto;
   background-color: $primary-bg-color;
+  cursor: pointer;
   border-color: red;
 
   @media screen and (min-width: $tablet-width) {
