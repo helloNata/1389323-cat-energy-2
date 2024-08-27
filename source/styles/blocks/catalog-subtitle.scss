@@ -1,13 +1,41 @@
 .catalog-subtitle {
-  @include font-full($oswald-font, 24px, 24px, 400, $secondary-color);
+  @include font-full($oswald-font, 24px, 1, 400, $secondary-color);
+  position: relative;
+  display: inline-block;
+  padding-right: 40px;
+  background-color: $primary-bg-color;
+
+  &::after {
+    @include before-after(100vw, 2px);
+    background-color: $basic-green;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    z-index: -1;
+  }
 
   @media screen and (min-width: $tablet-width) {
+    padding-left: 40px;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 1;
+
+    &::before {
+      @include before-after(100vw, 2px);
+      background-color: $basic-green;
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 0;
+      z-index: -1;
+    }
   }
 
   @media screen and  (min-width: $desktop-width) {
+    padding-left: 0;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 1;
+
+    &::before {
+      left: calc(-1*(100vw + 40px));
+    }
   }
 }

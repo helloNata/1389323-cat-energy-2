@@ -1,5 +1,5 @@
 .main-header {
-  padding-block: 13px 14px;
+  padding-block: 13px 0;
   position: relative;
 
   &::after {
@@ -22,7 +22,7 @@
 
   &--home {
     &::after {
-      display: none;
+      background-color: $primary-bg-color;
     }
 
     @media screen and (min-width: $desktop-width) {
@@ -30,6 +30,17 @@
       top: 0;
       z-index: 2;
       width: 100vw;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    &--nojs {
+      padding-bottom: 0;
+    }
+
+    &--nojs::after {
+      background-color: $primary-bg-color;
+      margin-top: -1px;
     }
   }
 }

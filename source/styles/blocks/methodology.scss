@@ -22,10 +22,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: methodology 0;
 
   @media screen and (min-width: $tablet-width) {
     @include full-flex();
-    gap: 37px 133px;
+    gap: 77px 133px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -36,6 +37,8 @@
 .methodology__item {
   @include full-flex();
   gap: 20px;
+  counter-increment: methodology 1;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -76,6 +79,16 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+
+    &::after {
+      @include before-after(136px, 280px, block, counter(methodology));
+      @include font-full($oswald-font, 280px, 280px, 400, $basic-grey);
+      position: absolute;
+      top: -39px;
+      right: 0;
+      z-index: -1;
+      text-align: left;
     }
   }
 

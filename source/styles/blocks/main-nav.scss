@@ -23,6 +23,13 @@
     color: $special-dark;
   }
 
+  @media screen and (max-width: $mobile-width) {
+    &--nojs {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
   &--home {
     @media screen and (min-width: $desktop-width) {
       color: $contrast-text-color;
@@ -35,9 +42,49 @@
   min-width: 24px;
   min-height: 24px;
   margin-left: auto;
+  display: block;
+  padding: 0;
   background-color: $primary-bg-color;
   cursor: pointer;
-  border-color: red;
+  border: none;
+  position: relative;
+
+  .main-nav--nojs & {
+    display: none;
+  }
+
+  &--closed::before {
+    @include before-after(24px, 2px);
+    background-color: $secondary-color;
+    box-shadow:
+      0 8px 0  0 $secondary-color,
+      0 16px 0  0 $secondary-color;
+    margin-block: 2px 20px;
+  }
+
+  &--opened::before,
+  &--opened::after {
+    @include before-after(24px, 1.5px);
+    background-color: $secondary-color;
+    position: absolute;
+  }
+
+  &--opened::before {
+    transform: rotate(45deg);
+  }
+
+  &--opened::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -57,7 +104,13 @@
   background-color: $primary-bg-color;
   z-index: 3;
 
-  &--open {
+  .main-nav--nojs & {
+    display: block;
+    position: static;
+    margin: 10px 0 0;
+  }
+
+  &--opened {
     display: block;
   }
 

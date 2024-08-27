@@ -21,7 +21,7 @@ $decorate-social-color: #d9d9d9;
 /* viewport */
 $tablet-width: 768px;
 $desktop-width: 1440px;
-$mobile-width:767px;
+$mobile-width: calc($tablet-width - 1px);
 
 /* program-card */
 /* line-height for title */
