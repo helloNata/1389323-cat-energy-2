@@ -4,12 +4,12 @@
   grid-template-rows: repeat(3, auto);
   justify-content: start;
   align-items: start;
-  row-gap: 14px;
+  row-gap: 11px;
   padding: 20px clamp(20px, calc((100vw - 280px)/2), calc((100vw - 280px)/2))  25px;
 
   &--secondary {
     display: block;
-    padding-top: 78px;
+    padding-block: 78px 23px;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -26,7 +26,7 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr auto;
       background: $primary-bg-color;
-      padding-top: 241px;
+      padding-top: 243px;
     }
   }
 
@@ -161,12 +161,13 @@
 
     &:last-child {
       margin-bottom: 0;
+      padding-top: 1px;
     }
 
     &::after {
       @include before-after(100%, 1px);
       background-color: #cdcdcd;
-      margin-bottom: 5px;
+      margin-top: 5px;
     }
   }
 }
@@ -191,7 +192,7 @@
 }
 
 .card-product__button {
-  margin-top: 2px;
+  margin-top: 5px;
   padding: 10px 30px;
   grid-row: -2/-1;
   grid-column: 1/-1;
@@ -200,7 +201,7 @@
   line-height: 20px;
 
   @media screen and (min-width: $tablet-width) {
-    margin-top: 7px;
+    margin-top: 11px;
     grid-row: 4/5;
     grid-column: 1/-1;
   }

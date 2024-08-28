@@ -5,11 +5,11 @@
   &::after {
     @include before-after(100%, 1px);
     background-color: #d9d9d9;
-    margin-top: 15px;
+    margin-top: 9px;
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding-block: 25px 65px;
+    padding-block: 25px 62px;
 
     &::after {
       display: none;
@@ -53,8 +53,12 @@
 
   @media screen and (min-width: $tablet-width) {
     justify-content: flex-start;
-    width: 708px;
-    padding-right: 3px;
+    width: 768px;
+    padding-inline: 30px 34px;
+
+    .main-header--home & {
+      padding-right: 36px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {

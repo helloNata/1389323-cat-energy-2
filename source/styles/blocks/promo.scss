@@ -12,14 +12,15 @@
 
 .promo__title {
   margin-block: 0 32px;
+  width: fit-content;
 
   @media screen and  (min-width: $tablet-width) {
     margin-bottom: 66px;
-    padding-left: 40px;
+    margin-left: 40px;
   }
 
   @media screen and  (min-width: $desktop-width) {
     margin-bottom: 72px;
-    padding-left: 0;
+    margin-left: 0;
   }
 }

@@ -3,7 +3,7 @@
   background-color: $basic-grey;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 75px 316px 58px 52px;
+    padding: 75px 316px 58px 51px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 .program-card__title {
   @include font-full($oswald-font, 24px, $line-height-mobile, 400, $secondary-color);
   position: relative;
-  margin-block: 0 29px;
+  margin-block: 0 30px;
   padding-left: calc($margin-left-title + $slim-width);
   text-transform: uppercase;
   word-wrap: break-word;
@@ -82,13 +82,13 @@
 }
 
 .program-card__text {
-  margin-block: 0 23px;
+  margin-block: 0 22px;
 
   @media screen and (min-width: $tablet-width) {
     color: $secondary-color;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 53px;
+    margin-bottom: 33px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -101,7 +101,7 @@
   position: relative;
   display: inline-block;
   padding-right: 57px;
-  padding-top: 19px;
+  padding-top: 20px;
   text-transform: uppercase;
 
   &::before {

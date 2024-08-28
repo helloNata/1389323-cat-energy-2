@@ -59,7 +59,7 @@
     box-shadow:
       0 8px 0  0 $secondary-color,
       0 16px 0  0 $secondary-color;
-    margin-block: 2px 20px;
+    margin-block: 0 20px;
   }
 
   &--opened::before,
@@ -67,6 +67,8 @@
     @include before-after(24px, 1.5px);
     background-color: $secondary-color;
     position: absolute;
+    top: 9px;
+    left: 3px;
   }
 
   &--opened::before {
@@ -94,7 +96,7 @@
 .main-nav__list {
   display: none;
   position: absolute;
-  top: 66px;
+  top: 65px;
   left: 0;
   width: 100vw;
   min-width: 320px;
@@ -150,7 +152,7 @@
 
 .main-nav__link {
   display: block;
-  padding-block: 21px 24px;
+  padding-block: 22px 23px;
   color: inherit;
 
   &:hover {
@@ -170,18 +172,19 @@
 
     &--current {
       text-decoration: underline;
-      text-underline-offset: 8px;
+      text-underline-offset: 6px;
       text-decoration-color: $basic-green;
       text-decoration-thickness: 2px;
       text-underline-position: under;
+    }
+
+    &--current-home {
+      text-decoration-color: $contrast-text-color;
+      text-underline-offset: 8px;
     }
   }
 
   @media screen and (min-width: $desktop-width) {
     padding-block: 13px;
-
-    &--current-home {
-      text-decoration-color: $contrast-text-color;
-    }
   }
 }

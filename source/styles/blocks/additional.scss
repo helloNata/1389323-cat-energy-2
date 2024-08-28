@@ -22,14 +22,20 @@
 
 .additional__title {
   margin-block: 0 36px;
+  width: fit-content;
 
   @media screen and  (min-width: $tablet-width) {
     margin-bottom: 80px;
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
 .additional__list {
-  margin: 0 0 35px;
+  margin: 0 0 36px;
   padding: 1px 0;
   list-style: none;
   background-color: #cdcdcd;
@@ -51,10 +57,11 @@
   gap: 13px;
   background-color: $primary-bg-color;
   margin-bottom: 1px;
-  padding-block: 13px 19px;
+  padding-block: 13px 17px;
 
   &:last-child {
     margin-bottom: 0;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $tablet-width) {
@@ -130,7 +137,7 @@
 
 .additional__offer {
   color: $contrast-text-color;
-  padding: 150px 20px 20px;
+  padding: 150px 20px 20px 18px;
   min-height: 290px;
   background-image:
     url("../../icons/stack.svg#additional-icon"),
@@ -138,7 +145,7 @@
     image-set(url("../../images/background/additional-background@1x.jpg") 1x, url("../../images/background/additional-background@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-size: 78px 80px, cover, cover;
-  background-position: top 65px center, top center, center;
+  background-position: top 58px center, top center, center;
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
@@ -170,7 +177,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin-block: 48px 0;
+  margin-block: 37px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 251px;

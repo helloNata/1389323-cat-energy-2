@@ -1,11 +1,12 @@
 /* в этот файл добавляет скрипты*/
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-const navList = document.querySelector('main-nav__list');
+const navList = document.querySelector('.main-nav__list');
 const mainHeader = document.querySelector('.main-header');
 
 mainHeader.classList.remove('main-header--nojs');
 navMain.classList.remove('main-nav--nojs');
+console.log(navList);
 
 navToggle.addEventListener('click', () => {
   if (navList.classList.contains('main-nav__list--opened')) {
@@ -19,3 +20,5 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.add('main-nav__toggle--opened');
   }
 });
+
+

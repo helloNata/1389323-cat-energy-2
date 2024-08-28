@@ -49,6 +49,11 @@
     background-color: $basic-green;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--benefit::before {
@@ -73,7 +78,7 @@
 
   @media screen and (min-width: $tablet-width) {
     flex-flow: column nowrap;
-    gap: 31px;
+    gap: 30px;
     width: 250px;
     padding-bottom: 57px;
 
@@ -82,13 +87,25 @@
     }
 
     &::after {
-      @include before-after(136px, 280px, block, counter(methodology));
+      @include before-after(138px, 280px, block, counter(methodology));
       @include font-full($oswald-font, 280px, 280px, 400, $basic-grey);
       position: absolute;
-      top: -39px;
+      top: -40px;
       right: 0;
       z-index: -1;
       text-align: left;
+    }
+
+    &--benefit::after {
+      width: 133px;
+    }
+
+    &--release-form::after {
+      width: 139px;
+    }
+
+    &--timing::after {
+      width: 137px;
     }
   }
 
@@ -114,14 +131,24 @@
 }
 
 .methodology__text {
-  width: 199px;
+  width: 200px;
   margin-block: 0;
+  align-self: center;
+
+  .methodology__item--timing & br {
+    display: none;
+  }
 
   @media screen and (min-width: $tablet-width) {
     width: 245px;
     font-size: 16px;
     line-height: 24px;
     color: $primary-color;
+    margin-left: -6px;
+
+    .methodology__item--timing & br {
+      display: block;
+    }
   }
 }
 
