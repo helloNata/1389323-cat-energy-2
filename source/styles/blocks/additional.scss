@@ -42,6 +42,7 @@
 
   @media screen and  (min-width: $tablet-width) {
     margin-bottom: 70px;
+    padding-inline: 1px;
   }
 
   @media screen and  (min-width: $desktop-width) {
@@ -65,8 +66,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
-    gap: 25px 50px;
+    padding: 26px 38px 27px;
+    gap: 23px 50px;
+
+    &:last-child {
+      padding-bottom: 26px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -102,6 +107,7 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: auto;
+    margin-block: 2px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,9 +124,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-left: 0;
-    min-width: 37px;
+    margin-inline: 0 2px;
+    min-width: 40px;
     text-align: right;
+    margin-block: 2px 0;
   }
 }
 
@@ -156,7 +163,7 @@
       image-set(url("../../images/background/additional-background-tablet@1x.jpg") 1x, url("../../images/background/additional-background-tablet@2x.jpg") 2x);
 
     background-size: 80px 83px, cover, cover;
-    background-position: left 88px top 50%, top center, center;
+    background-position: left 78px top calc(50% - 2px), top center, center;
   }
 
   @media (min-width: $desktop-width) {

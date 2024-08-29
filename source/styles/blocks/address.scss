@@ -22,7 +22,7 @@
     width: 565px;
     padding: 60px 78px 60px 80px;
     position: absolute;
-    top: 95px;
+    top: 93px;
     left: calc((100vw - 1220px)/2);
     background-color: $primary-bg-color;
   }
@@ -52,6 +52,10 @@
     width: 157px;
     text-align: right;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .address__desc {
@@ -60,6 +64,12 @@
   @media screen and (min-width: $tablet-width) {
     &:first-child {
       margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &:first-child {
+      margin-bottom: 19px;
     }
   }
 }

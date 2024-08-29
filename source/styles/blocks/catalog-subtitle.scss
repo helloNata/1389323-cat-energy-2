@@ -10,7 +10,7 @@
     @include before-after(100vw, 2px);
     background-color: $basic-green;
     position: absolute;
-    top: calc(50% - 1px);
+    top: calc(50% - 2px);
     right: 0;
     box-shadow: 100vw 0 0 0 $basic-green;
     z-index: -1;

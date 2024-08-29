@@ -11,7 +11,7 @@
   @media screen and (min-width: $desktop-width) {
     padding-block: 0 75px;
     border-top: none;
-    background: linear-gradient(to bottom, $primary-bg-color 21.9%, $basic-grey 21.9%);
+    background: linear-gradient(to bottom, $primary-bg-color 22.79%, $basic-grey 22.79%);
   }
 }
 
@@ -70,7 +70,8 @@
 
   @media screen and (min-width: $desktop-width) {
     width: 436px;
-    gap: 60px 42px;
+    gap: 60px 43px;
+    margin-block: 2px 0;
   }
 }
 
@@ -109,11 +110,13 @@
   @media screen and (min-width: $tablet-width) {
     display: block;
     margin-bottom: 9px;
+    word-spacing: 0;
   }
 
   @media screen and (min-width: $desktop-width) {
     display: inline;
-    margin: 0 63px 0 0;
+    margin: 0 60px 0 0;
+    word-spacing: 1px;
   }
 }
 

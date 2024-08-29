@@ -16,6 +16,10 @@
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .methodology__list {
@@ -110,22 +114,26 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    &--benefit {
-      margin-right: 17px;
-      width: 230px;
-    }
+    width: 247px;
 
     &--release-form {
-      margin-right: 2px;
-      width: 246px;
+      margin-right: 1px;
     }
 
-    &--replacement {
-      width: 247px;
+    &::before {
+      margin-left: 1px;
     }
 
-    &--timing {
-      width: 247px;
+    &::after {
+      width: 133px;
+    }
+
+    &--benefit::before {
+      margin-left: 0;
+    }
+
+    &--benefit::after {
+      width: 129px;
     }
   }
 }
@@ -149,6 +157,11 @@
     .methodology__item--timing & br {
       display: block;
     }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
