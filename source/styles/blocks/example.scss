@@ -9,7 +9,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-block: 0 75px;
+    padding-block: 0 71px;
     border-top: none;
     background: linear-gradient(to bottom, $primary-bg-color 22.79%, $basic-grey 22.79%);
   }
@@ -58,19 +58,19 @@
 .example__list {
   @include full-flex();
   width: 100%;
-  gap: 36px 32px;
+  gap: 19px 32px;
   padding: 0;
   margin: 0 0 20px;
   list-style: none;
 
   @media screen and (min-width: $tablet-width) {
     gap: 20px 43px;
-    margin-bottom: 104px;
+    margin-bottom: 99px;
   }
 
   @media screen and (min-width: $desktop-width) {
     width: 436px;
-    gap: 60px 43px;
+    gap: 54px 43px;
     margin-block: 2px 0;
   }
 }
@@ -90,7 +90,7 @@
     width: 162px;
 
     &--secondary {
-      margin: 0 1px 2px auto;
+      margin: 0 1px 6px auto;
       width: 171px;
       align-self: center;
       text-align: right;

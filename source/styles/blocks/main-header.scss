@@ -29,7 +29,8 @@
       position: absolute;
       top: 0;
       z-index: 2;
-      width: 100vw;
+      width: 1440px;
+      left: calc((100vw - 1440px) / 2);
     }
   }
 

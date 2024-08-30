@@ -1,6 +1,5 @@
 .parameter {
   @include full-flex(center, center, column nowrap);
-  position: relative;
   gap: 8px;
 }
 
@@ -21,8 +20,7 @@
 
 .parameter__name {
   @include font-full($lato-font, 12px, 12px, 400);
-  position: absolute;
-  top: 46px;
+  margin-top: -16px;
   text-transform: lowercase;
   background-color: $example-color;
   width: 87px;
@@ -30,7 +28,7 @@
   z-index: 2;
 
   @media screen and (min-width: $tablet-width) {
-    top: 62px;
+    margin-top: -16px;
     font-size: 14px;
     line-height: 14px;
     width: 114px;
