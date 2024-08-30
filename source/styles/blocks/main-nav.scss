@@ -186,5 +186,9 @@
 
   @media screen and (min-width: $desktop-width) {
     padding-block: 13px;
+
+    &--current {
+      text-underline-offset: 8px;
+    }
   }
 }

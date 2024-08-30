@@ -15,12 +15,12 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 708px;
-    padding: 60px 40px 61px 39px;
+    padding: 60px 40px 60px 39px;
   }
 
   @media screen and (min-width: $desktop-width) {
     width: 565px;
-    padding: 60px 78px 60px 80px;
+    padding: 61px 78px 60px 80px;
     position: absolute;
     top: 93px;
     left: calc((100vw - 1220px)/2);

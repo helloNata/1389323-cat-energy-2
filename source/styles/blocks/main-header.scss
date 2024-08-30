@@ -62,12 +62,12 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 1440;
+    margin-inline: auto;
+    width: 1440px;
+    padding-inline: 110px;
 
     .main-header--home & {
-      margin-inline: auto;
-      width: 1440px;
-      padding-inline: 110px;
+      padding-right: 110px;
     }
   }
 }

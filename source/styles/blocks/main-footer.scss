@@ -3,7 +3,7 @@
   background-color: $basic-grey;
 
   @media screen and (min-width: $tablet-width) {
-    padding-block: 55px;
+    padding-block: 56px 54px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -45,7 +45,7 @@
   @media (min-width: $tablet-width) {
     width: 163px;
     align-self: flex-start;
-    margin-top: 6px;
+    margin-top: 5px;
   }
 }
 
