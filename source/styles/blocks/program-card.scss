@@ -83,12 +83,24 @@
 
 .program-card__text {
   margin-block: 0 22px;
+  position: relative;
+
+  &:last-of-type::after {
+    @include before-after(240px, 1px);
+    position: absolute;
+    bottom: -22px;
+    background-color: #d9d9d9;
+  }
 
   @media screen and (min-width: $tablet-width) {
     color: $secondary-color;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 33px;
+
+    &:last-of-type::after {
+      display: none;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -103,14 +115,6 @@
   padding-right: 57px;
   padding-top: 20px;
   text-transform: uppercase;
-
-  &::before {
-    @include before-after(240px, 1px);
-    position: absolute;
-    top: 0;
-    background-color: #d9d9d9;
-  }
-
 
   &::after {
     @include before-after(32px, 12px);
@@ -136,10 +140,6 @@
     font-size: 20px;
     line-height: 29.64px;
     padding-right: 57px;
-
-    &::before {
-      display: none;
-    }
 
     &::after {
       right: 0;

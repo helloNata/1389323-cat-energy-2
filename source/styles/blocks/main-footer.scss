@@ -21,6 +21,7 @@
     width: 708px;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -56,6 +57,7 @@
   @media screen and (min-width: $tablet-width) {
     width: 184px;
     margin-inline: auto;
+    margin-top: 6px;
   }
 
   @media screen and (min-width: $desktop-width) {

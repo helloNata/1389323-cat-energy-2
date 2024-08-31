@@ -29,8 +29,8 @@
       position: absolute;
       top: 0;
       z-index: 2;
-      width: 1440px;
-      left: calc((100vw - 1440px) / 2);
+      width: 1220px;
+      left: calc((100vw - 1220px) / 2);
     }
   }
 
@@ -64,11 +64,11 @@
 
   @media screen and (min-width: $desktop-width) {
     margin-inline: auto;
-    width: 1440px;
-    padding-inline: 110px;
+    width: 1220px;
+    padding-inline: 0;
 
     .main-header--home & {
-      padding-right: 110px;
+      padding-right: 0;
     }
   }
 }

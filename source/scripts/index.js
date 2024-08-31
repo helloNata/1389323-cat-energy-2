@@ -6,7 +6,6 @@ const mainHeader = document.querySelector('.main-header');
 
 mainHeader.classList.remove('main-header--nojs');
 navMain.classList.remove('main-nav--nojs');
-console.log(navList);
 
 navToggle.addEventListener('click', () => {
   if (navList.classList.contains('main-nav__list--opened')) {
