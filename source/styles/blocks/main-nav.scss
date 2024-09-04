@@ -179,7 +179,6 @@
     }
 
     &--current-home {
-      text-decoration-color: $contrast-text-color;
       text-underline-offset: 8px;
     }
   }
@@ -189,6 +188,10 @@
 
     &--current {
       text-underline-offset: 8px;
+    }
+
+    &--current-home {
+      text-decoration-color: $contrast-text-color;
     }
   }
 }
