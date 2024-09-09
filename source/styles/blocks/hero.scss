@@ -3,7 +3,7 @@
   text-align: center;
   background-image:
     linear-gradient(to bottom, rgba($basic-green, 0.85) 60.4%, $primary-bg-color 60.4%),
-    image-set(url("../../images/background/hero-background@1x.jpg") 1x, url("../../images/background/hero-background@2x.jpg") 2x),
+    image-set(url("../../images/background/hero-background@1x.webp") 1x, url("../../images/background/hero-background@1x.jpg") 1x, url("../../images/background/hero-background@2x.webp") 2x, url("../../images/background/hero-background@2x.jpg") 2x),
     linear-gradient(to bottom, #4c4b50 60.4%, $primary-bg-color 60.4%);
   background-repeat: no-repeat;
   background-position: top center;
@@ -21,7 +21,7 @@
     min-height: 693px;
     background-image:
       linear-gradient(to left, rgba($basic-green, 0.85) 50%, $primary-bg-color 50%),
-      image-set(url("../../images/background/hero-background-desktop@1x.jpg") 1x, url("../../images/background/hero-background-desktop@2x.jpg") 2x),
+      image-set(url("../../images/background/hero-background-desktop@1x.webp") 1x, url("../../images/background/hero-background-desktop@1x.jpg") 1x, url("../../images/background/hero-background-desktop@2x.webp") 2x, url("../../images/background/hero-background-desktop@2x.jpg") 2x),
       linear-gradient(to left, #4e4f53 50%, $primary-bg-color 50%);
     background-position: top right;
     background-size: 100% auto, 50% auto, 100% auto;
