@@ -1,12 +1,12 @@
 .additional {
-  padding-bottom: 40px;
+  padding-block: 25px 0;
 
   @media screen and  (min-width: $tablet-width) {
-    padding-bottom: 80px;
+    padding-top: 74px;
   }
 
   @media screen and  (min-width: $desktop-width) {
-    padding-bottom: 96px;
+    padding-top: 70px;
   }
 }
 

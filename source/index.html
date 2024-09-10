@@ -18,7 +18,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--home main-header--nojs">
+  <header class="main-header main-header--home main-header--nojs" data-test="header">
     <div class="main-header__container main-header__container--home">
       <a class="main-header__logo" href="#" aria-label="Перейти на главную страницу">
         <picture>
@@ -46,7 +46,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__container">
         <h1 class="hero__title">Функциональное <br> питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
@@ -61,7 +61,7 @@
         <a class="hero__button basic-button" href="program.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="page__container program">
+    <section class="page__container program" data-test="programs">
       <h2 class="visually-hidden">Программы питания для котов</h2>
       <article class="program__item program-card">
         <h3 class="program-card__title program-card__title--slim">Похудение</h3>
@@ -78,7 +78,7 @@
         </a>
       </article>
     </section>
-    <section class="page__container methodology">
+    <section class="page__container methodology" data-test="features">
       <h2 class="methodology__title index-subtitle">Как это работает</h2>
       <ul class="methodology__list">
         <li class="methodology__item methodology__item--benefit">
@@ -106,7 +106,7 @@
         </li>
       </ul>
     </section>
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="page__container example__container">
         <h2 class="example__title index-subtitle">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="address address--home">
+    <section class="address address--home" data-test="contacts">
       <div class="address__container">
         <h2 class="visually-hidden">Где нас найти</h2>
         <p class="address__appeal">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -160,7 +160,7 @@
       </iframe>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__container">
       <a class="main-footer__logo" href="#" aria-label="Ссылка на главную страницу сайта.">
         <svg class="main-footer__logo-icon" width="128" height="24" role="img" focusable="false" aria-labelledby="logo-footer">

@@ -18,7 +18,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs">
+  <header class="main-header main-header--nojs" data-test="header">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html" aria-label="Перейти на главную страницу">
         <picture>
@@ -46,7 +46,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <div class="catalog__list">
         <article class="catalog__item card-product">
@@ -289,7 +289,7 @@
         </div>
       </div>
     </section>
-    <section class="page__container  additional">
+    <section class="page__container  additional" data-test="additional">
       <h2 class="additional__title catalog-subtitle">Дополнительные товары</h2>
       <div class="additional__container">
         <ul class="additional__list">
@@ -337,7 +337,7 @@
         <button class="subscribe__button basic-button basic-button--accent" type="submit" name="subscribe__button">Подписаться</button>
       </form>
     </section>
-    <section class="address">
+    <section class="address" data-test="contacts">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="address__container">
         <p class="address__appeal">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
@@ -350,7 +350,7 @@
       </iframe>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__container">
       <a class="main-footer__logo" href="index.html" aria-label="Ссылка на главную страницу сайта.">
         <svg class="main-footer__logo-icon" width="128" height="24" role="img" focusable="false" aria-labelledby="logo-footer">
