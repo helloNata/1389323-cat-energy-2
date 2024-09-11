@@ -7,13 +7,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="keywords" content="Диета для котов, питание для кошек">
   <meta name="description" content="Функциональное питание для котов. Для вашего питомца у нас есть несколько программ питания c разнообразными вкусами.">
+  <!-- preload -->
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="images/content-index/index-product@2x.webp" as="image" type="image/webp">
+  <link rel="preload" href="scripts/index.js" as="script">
+  <!-- favicon -->
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/favicons-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
+  <!-- styles -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- scripts -->
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -28,10 +34,10 @@
         </picture>
       </a>
       <nav class="main-nav main-nav--home main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
           <span class="visually-hidden">Открыть/свернуть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--opened">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current main-nav__link--current-home" href="#">Главная</a>
           </li>
