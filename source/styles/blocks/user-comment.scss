@@ -1,0 +1,8 @@
+.user-comment__text {
+  width: 100%;
+  padding: 14px 14px 14px 15px;
+
+  &::placeholder {
+    color: $primary-color;
+  }
+}
