@@ -69,15 +69,15 @@
         <fieldset class="selection__parameter selection__parameter--main option option--decorate">
           <legend class="visually-hidden">Укажите главную цель для выбора программы питания.</legend>
           <div class="option__parameter">
-            <input class="option__value" type="radio" name="purpose" id="purpose-slim" checked>
+            <input class="option__value visually-hidden" type="radio" name="purpose" id="purpose-slim" checked>
             <label class="option__name option__name--purpose" for="purpose-slim">Похудение</label>
           </div>
           <div class="option__parameter">
-            <input class="option__value" type="radio" name="purpose" id="purpose-pro">
+            <input class="option__value visually-hidden" type="radio" name="purpose" id="purpose-pro">
             <label class="option__name option__name--purpose" for="purpose-pro">Набор массы</label>
           </div>
           <div class="option__parameter">
-            <input class="option__value" type="radio" name="purpose" id="purpose-other">
+            <input class="option__value visually-hidden" type="radio" name="purpose" id="purpose-other">
             <label class="option__name option__name--purpose" for="purpose-other">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
@@ -101,19 +101,19 @@
           <legend class="selection__caption selection__caption--additional">Дополнительно
           </legend>
           <div class="option__parameter">
-            <input class="option__value" type="checkbox" id="sugar" name="sugar-free" checked>
+            <input class="option__value visually-hidden" type="checkbox" id="sugar" name="sugar-free" checked>
             <label class="option__name option__name--additional" for="sugar">сахарозаменитель</label>
           </div>
           <div class="option__parameter">
-            <input class="option__value" type="checkbox" id="water" name="drinking-water">
+            <input class="option__value visually-hidden" type="checkbox" id="water" name="drinking-water">
             <label class="option__name option__name--additional" for="water">питьевая вода</label>
           </div>
           <div class="option__parameter">
-            <input class="option__value" type="checkbox" id="milk" name="drinking-milk">
+            <input class="option__value visually-hidden" type="checkbox" id="milk" name="drinking-milk">
             <label class="option__name option__name--additional" for="milk">молоко</label>
           </div>
           <div class="option__parameter">
-            <input class="option__value" type="checkbox" id="vitamins" name="vitamins">
+            <input class="option__value visually-hidden" type="checkbox" id="vitamins" name="vitamins">
             <label class="option__name option__name--additional" for="vitamins">витамины</label>
           </div>
         </fieldset>
@@ -123,22 +123,22 @@
         </div>
       </form>
     </section>
-    <section class="address">
+    <section class="address" data-test="contacts">
+      <h2 class="visually-hidden">Где нас найти</h2>
       <div class="address__container">
-        <h2 class="visually-hidden">Где нас найти</h2>
         <p class="address__appeal">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="address__text">
           <p class="address__desc">ул. Большая Конюшенная, д. 19/8</p>
           <p class="address__desc">Санкт-Петербург</p>
         </address>
       </div>
-      <iframe class="address__map map" title="Геологкация: город Санкт-Петербург ул.Большая Конюшенная, д. 19/8." src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d6669b729b71a2766c760885e5a0ec89bdcbc92ea19da0125c29644d37f2d9c&amp;source=constructor" width="320" height="362" frameborder="0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe class="address__map map" title="Геологкация: город Санкт-Петербург ул.Большая Конюшенная, д. 19/8." src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d6669b729b71a2766c760885e5a0ec89bdcbc92ea19da0125c29644d37f2d9c&amp;source=constructor" width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__container">
-      <a class="main-footer__logo" href="#" aria-label="Ссылка на главную страницу сайта.">
+      <a class="main-footer__logo" href="index.html" aria-label="Ссылка на главную страницу сайта.">
         <svg class="main-footer__logo-icon" width="128" height="24" role="img" focusable="false" aria-labelledby="logo-footer">
           <use href="../../icons/stack.svg#logo-footer"></use>
           <title id="logo-footer">Логотип компании "Cat energy"</title>
