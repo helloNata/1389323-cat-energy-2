@@ -5,4 +5,12 @@
   &::placeholder {
     color: $primary-color;
   }
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 9px 20px 11px;
+  }
 }

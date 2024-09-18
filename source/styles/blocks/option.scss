@@ -41,11 +41,23 @@
     &--decorate::before {
       display: none;
     }
+
+    &--additional {
+      @include full-flex();
+      gap: 42px 143px;
+      padding-left: 60px;
+      margin-bottom: -13px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
     &--decorate {
       padding: 30px 27px 30px 88px;
+    }
+
+    &--additional {
+      margin-bottom: -10px;
+      column-gap: 144px;
     }
   }
 }
@@ -58,6 +70,18 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    .option--additional & {
+      margin-bottom: 0;
+      width: 201px;
+      word-wrap: break-word;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    .option--additional & {
+      width: 181px;
     }
   }
 }
@@ -124,6 +148,8 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    line-height: $option-line-height-tablet;
+
     &::before {
       width: 39px;
       height: 39px;
@@ -135,6 +161,12 @@
       width: 18px;
       height: 18px;
       top: calc(-1 * (18px / 2 - $option-line-height-tablet/2));
+      left: -49px;
+    }
+
+    &--additional::after {
+      width: 21px;
+      height: 13px;
       left: -49px;
     }
   }
