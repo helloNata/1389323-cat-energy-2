@@ -5,16 +5,16 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29.64px;
-    padding: 3px 40px 60px;
+    padding: 62px 40px 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 14px 0 79px;
+    padding: 70px 0 81px;
   }
 }
 
 .selection__title {
-  margin-block: 0 37px;
+  margin-block: 0 38px;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
@@ -31,7 +31,8 @@
 }
 
 .selection__text {
-  margin-block: 0 39px;
+  margin-block: 0 38px;
+  width: 230px;
   font-size: 14px;
   color: $secondary-color;
   text-transform: uppercase;
@@ -40,13 +41,13 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
-    max-width: 325px;
+    width: 330px;
   }
 }
 
 .selection__form {
   @include full-flex(flex-start, flex-start, row wrap);
-  row-gap: 23px;
+  row-gap: 24px;
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet-width) {
@@ -106,7 +107,7 @@
   &::before {
     @include before-after(100vw, 2px);
     position: absolute;
-    top: calc(26px - 24px / 2);
+    top: calc(26px - 24px / 2 + 2px);
     right: 0;
     background-color: $basic-green;
     z-index: -1;
@@ -115,6 +116,9 @@
 
   &--profile {
     margin-bottom: 35px;
+    box-shadow:
+      25px 0 0 0 $primary-bg-color,
+      -20px 0 0 0 $primary-bg-color;
   }
 
   &--comment {
@@ -134,7 +138,7 @@
       -40px 0 0 0 $primary-bg-color;
 
     &::before {
-      top: calc(36px - 36px / 2);
+      top: calc(36px - 36px / 2 + 4px);
     }
 
     &--profile {
@@ -155,6 +159,12 @@
     &--comment {
       margin-bottom: 78px;
     }
+  }
+}
+
+.selection__caption-space {
+  @media screen and (min-width: $tablet-width) {
+    word-spacing: -2px;
   }
 }
 
@@ -184,13 +194,14 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 16px;
     width: 284px;
-    align-self: center;
+    padding: 16px 28px;
+    text-align: left;
   }
 
   @media screen and (min-width: $desktop-width) {
     flex-grow: 1;
     padding-left: 0;
-    text-align: left;
+    padding-top: 18px;
+    word-spacing: -1px;
   }
 }
-

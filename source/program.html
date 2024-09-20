@@ -22,7 +22,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--nojs" data-test="header">
+  <header class="main-header main-header--nojs main-header--program" data-test="header">
     <div class="main-header__container">
       <a class="main-header__logo" href="index.html" aria-label="Перейти на главную страницу">
         <picture>
@@ -82,7 +82,7 @@
           </div>
         </fieldset>
         <fieldset class="selection__parameter profile profile--contacts">
-          <legend class="selection__caption selection__caption--profile">Контактные данные <br class="selection__caption-break"> (владельца кота)
+          <legend class="selection__caption selection__caption--profile">Контактные данные <br class="selection__caption-break"><span class="selection__caption-space">(владельца кота)</span>
           </legend>
           <label class="profile__name">E-mail:*
             <input class="profile__value profile__value--email basic-input" type="email" name="email" value="kuklachev@gmail.com" required>
@@ -95,7 +95,7 @@
           <legend class="selection__caption selection__caption--comment">Комментарий
           </legend>
           <label class="visually-hidden" for="user-text">Здесь Вы можете оставить подробную информацию о своем шерстяном.</label>
-          <textarea class="user-comment__text basic-input" rows="5" id="user-text" name="cat-info" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="user-comment__text basic-input" id="user-text" name="cat-info" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="selection__parameter option option--additional">
           <legend class="selection__caption selection__caption--additional">Дополнительно
@@ -123,7 +123,7 @@
         </div>
       </form>
     </section>
-    <section class="address" data-test="contacts">
+    <section class=" address" data-test="contacts">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="address__container">
         <p class="address__appeal">Приглашаем к&nbsp;сотрудничеству дилеров!</p>

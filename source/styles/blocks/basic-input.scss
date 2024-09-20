@@ -25,6 +25,10 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29.64px;
-    padding: 11px 40px 11px 20px;
+    padding: 10px 40px 10px 20px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 10px 40px 10px 20px;
   }
 }

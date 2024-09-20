@@ -9,7 +9,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding-block: 25px 62px;
+    padding-block: 25px 0;
 
     &::after {
       display: none;
@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-block: 55px 74px;
+    padding-block: 55px 0;
   }
 
   &--home {
@@ -71,6 +71,10 @@
     .main-header--home & {
       padding-right: 36px;
     }
+
+    .main-header--program & {
+      padding-right: 31px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -79,6 +83,10 @@
     padding-inline: 0;
 
     .main-header--home & {
+      padding-right: 0;
+    }
+
+    .main-header--program & {
       padding-right: 0;
     }
   }

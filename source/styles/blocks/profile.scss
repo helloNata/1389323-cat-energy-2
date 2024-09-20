@@ -9,11 +9,11 @@
 
 .profile__name {
   @include full-flex(flex-start, baseline, row nowrap);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   width: 100%;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: -2px;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -21,6 +21,10 @@
 
     &:last-child {
       margin-bottom: 7px;
+    }
+
+    .profile--contacts & {
+      margin-bottom: 21px;
     }
 
     .profile--contacts &:last-child {
@@ -62,7 +66,8 @@
 
   @media screen and (min-width: $tablet-width) {
     .profile--contacts & {
-      background-position: center right 16px;
+      background-position: center right 14px;
+      margin-left: 14px;
     }
   }
 }

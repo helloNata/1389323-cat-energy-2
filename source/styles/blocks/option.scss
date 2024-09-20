@@ -1,6 +1,6 @@
 .option {
   padding-left: 45px;
-  padding-top: 22px;
+  padding-top: 28px;
 
   &--decorate {
     border-bottom: 1px solid transparent;
@@ -27,14 +27,14 @@
   }
 
   &--additional {
-    margin-bottom: -8px;
-    padding-top: 8px;
+    margin-block: -4px -11px;
+    padding-top: 7px;
   }
 
   @media screen and (min-width: $tablet-width) {
     &--decorate {
       border: 1px solid #e7e7e7;
-      padding: 28px 27px 32px 87px;
+      padding: 28px 27px 29px 87px;
     }
 
     &--decorate::after,
@@ -46,17 +46,17 @@
       @include full-flex();
       gap: 42px 143px;
       padding-left: 60px;
-      margin-bottom: -13px;
+      margin-block: -7px -8px;
     }
   }
 
   @media screen and (min-width: $desktop-width) {
     &--decorate {
-      padding: 30px 27px 30px 88px;
+      padding: 30px 27px 28px 88px;
     }
 
     &--additional {
-      margin-bottom: -10px;
+      margin-bottom: -7px;
       column-gap: 144px;
     }
   }
@@ -66,7 +66,7 @@
   margin-bottom: 25px;
 
   @media screen and (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     &:last-child {
       margin-bottom: 0;
@@ -91,9 +91,9 @@
   line-height: $option-line-height-mobile;
 
   &::before {
-    @include before-after(29px, 29px);
+    @include before-after(30px, 30px);
     position: absolute;
-    top: calc(-1 * (29px / 2 - $option-line-height-mobile/2));
+    top: calc(-1 * (30px / 2 - $option-line-height-mobile/2) + 2px);
     left: -45px;
     border: 1px solid #cdcdcd;
     background-color: $primary-bg-color;
@@ -106,7 +106,7 @@
   &--purpose::after {
     @include before-after(13px, 13px);
     position: absolute;
-    top: calc(-1 * (13px / 2 - $option-line-height-mobile/2));
+    top: calc(-1 * (13px / 2 - $option-line-height-mobile/2) + 2px);
     left: -37px;
     background-color: $basic-green;
     border-radius: 50%;
@@ -116,7 +116,7 @@
   &--additional::after {
     @include before-after(16px, 10px);
     position: absolute;
-    top: 0;
+    top: 2px;
     left: -37px;
     background-color: $primary-bg-color;
     border-left: 2px solid $basic-green;
@@ -146,10 +146,10 @@
     line-height: $option-line-height-tablet;
 
     &::before {
-      width: 39px;
-      height: 39px;
+      width: 40px;
+      height: 40px;
       left: -60px;
-      top: calc(-1 * (39px / 2 - $option-line-height-tablet/2));
+      top: calc(-1 * (40px / 2 - $option-line-height-tablet/2));
     }
 
     &--purpose::after {
